@@ -16,4 +16,10 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Vue to Github Pages
+        # You may pin to the exact commit or the version.
+        # uses: xRealNeon/VuePagesAction@803b88b34a8c4177efad63425155f35419e3a9c6
         uses: xRealNeon/VuePagesAction@1.0.1
+        with:
+          username: ${GH_USERNAME}
+          reponame: ${{ github.repository }}
+          token: ${{ secrets.GITHUB_TOKEN }}
