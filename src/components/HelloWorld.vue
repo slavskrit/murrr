@@ -2,7 +2,7 @@
   <div class="hello">
     eweeqwdd da dada
     <h1>{{ msg }}</h1>
-    <h3>Installed CLI Plugins</h3>
+    <h3>dsds CLI Plugins</h3>
     <ul>
       <li>
         <a
