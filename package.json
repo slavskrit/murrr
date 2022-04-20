@@ -5,13 +5,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "@vue/cli-plugin-babel": "4.1.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "execa": "latest",
     "@vue/cli-plugin-eslint": "4.1.1",
     "@vue/cli-service": "4.1.1",
     "babel-eslint": "^10.0.3",
@@ -24,10 +26,7 @@
     "env": {
       "node": true
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
+    "extends": ["plugin:vue/essential", "eslint:recommended"],
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
@@ -38,15 +37,7 @@
       "autoprefixer": {}
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "keywords": [
-    "vue",
-    "vuejs",
-    "starter"
-  ],
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "keywords": ["vue", "vuejs", "starter"],
   "description": "Vue.js example starter project"
 }
