@@ -1,8 +1,5 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" width="25%" />
-    <HelloWorld msg="Hello Vue in CodeSandbox!" />dwdwdw
-  </div>
+  <div id="app"><HelloWorld msg="Hello Vue in CodeSandbox!" />dwdwdw</div>
 </template>
 
 <script>
@@ -18,7 +15,7 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "PT Mono", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
