@@ -12,6 +12,4 @@ app.use(VueGapi, {
   scope: "https://www.googleapis.com/auth/spreadsheets"
 });
 
-// Vue.config.productionTip = false;
-
 app.mount("#app");
