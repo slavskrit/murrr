@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>user: {{ userName }} {{ isSignedIn }}</p>
     <div v-if="isSignedIn">
       <button @click="logout()" type="button">Logout</button>
       {{ userName }}
@@ -24,6 +25,8 @@ export default {
     };
   },
   created() {
+    console.debug(this.isSignedIn);
+    console.debug(this.userName);
     // (2) Subscribe to authentication status changes
     this.$gapi.listenUserSignIn((isSignedIn) => {
       this.isSignedIn = isSignedIn;
@@ -46,6 +49,7 @@ export default {
       if (user) {
         return user.firstName;
       }
+      return "";
     },
   },
 };
